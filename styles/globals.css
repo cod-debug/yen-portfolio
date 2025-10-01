@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Berkshire Swash';
+  src: url('/assets/fonts/BerkshireSwash-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Sansation';
+    src: url('/assets/fonts/Sansation-Regular.ttf') format('truetype');
+}
+
+body {
+  color: var(--foreground-rgb);
+  font-family: 'Sansation', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@config "../tailwind.config.js"
