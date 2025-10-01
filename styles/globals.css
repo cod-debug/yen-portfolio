@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: 'Berkshire Swash';
-  src: url('/assets/fonts/BerkshireSwash-Regular.ttf') format('truetype');
+  src: url('/web-assets/fonts/BerkshireSwash-Regular.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Sansation';
-    src: url('/assets/fonts/Sansation-Regular.ttf') format('truetype');
+    src: url('/web-assets/fonts/Sansation-Regular.ttf') format('truetype');
 }
 
 body {

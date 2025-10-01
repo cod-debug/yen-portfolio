@@ -15,7 +15,7 @@ export default function About() {
               alt="Logo"
               width={300}
               height={100}
-              className="rounded-full w-24 border-1 border-white min-w-md p-4"
+              className="rounded-full w-md border-1 border-white max-w-[90%] p-4"
             />
           </div>
           <div className={grid_child_classnames}>

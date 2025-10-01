@@ -9,7 +9,7 @@ export const Logo: React.FC<IconSvgProps> = ({
   ...props
 }) => (
     <img
-      src={"/assets/images/logo.png"}
+      src={"/web-assets/images/logo.png"}
       alt="Logo"
       width={50}
       height={30}
