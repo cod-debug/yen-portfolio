@@ -1,5 +1,4 @@
-import desktopBanner from '@/assets/img/desktop.jpg';
-import { Button } from '@heroui/button';
+import desktopBanner from '@/assets/img/desktop.jpeg';
 
 export default function Welcome(){
     return(
@@ -8,17 +7,14 @@ export default function Welcome(){
         style={{
             backgroundPosition: 'center',
             backgroundSize: 'cover',
+            backgroundAttachment: 'fixed',
             backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url(${desktopBanner.src})` 
         }}
-        id="welcome"
+        id="alignstudio"
       >
-        <div className='text-center flex flex-col gap-12'>
-            <p className='text-xl text-white'>Juliane Faith Cuizon</p>
-            <h1 className='text-6xl md:text-8xl text-white font-highlight'>WELCOME</h1>
-            <div className='flex gap-4 justify-center'>
-                <Button className='bg-linear-to-tr from-black to-grey-400 text-white shadow-lg hover:from-grey-400 hover:to-black' size="lg">Graphic Designs</Button>
-                <Button className='shadow-lg hover:bg-white hover:text-default transition-all ease-in' color='default' variant='bordered' size="lg">VA Experience</Button>
-            </div>
+        <div className='text-center flex flex-col gap-4'>
+            <h1 className='text-8xl md:text-[100pt] text-light font-highlight'>align studio</h1>
+            <p className='text-xl text-light'>Where productivity sparks creativity</p>
         </div>
       </section>
     )

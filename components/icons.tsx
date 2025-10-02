@@ -1,20 +1,14 @@
 import * as React from "react";
 
 import { IconSvgProps } from "@/types";
+import logoImg from "@/assets/img/logo.png";
 
 export const Logo: React.FC<IconSvgProps> = ({
   size = 36,
   width,
   height,
   ...props
-}) => (
-    <img
-      src={"/web-assets/images/logo.png"}
-      alt="Logo"
-      width={50}
-      height={30}
-    />
-);
+}) => <img src={logoImg.src} alt="Logo" width={50} height={30} />;
 
 export const DiscordIcon: React.FC<IconSvgProps> = ({
   size = 24,
@@ -177,3 +171,43 @@ export const SearchIcon = (props: IconSvgProps) => (
     />
   </svg>
 );
+
+export const EllipsisIcon = (props: IconSvgProps) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      className="size-6"
+      {...props}
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+      />
+    </svg>
+  );
+};
+
+export const ChevronDown = (props: IconSvgProps) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      className="size-6"
+      {...props}
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="m19.5 8.25-7.5 7.5-7.5-7.5"
+      />
+    </svg>
+  );
+};

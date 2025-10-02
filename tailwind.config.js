@@ -10,10 +10,13 @@ const config = {
   theme: {
     extend: {
       colors:{
-        primary: 'green-500'
+        primary: 'green-500',
+        light: '#F3E8D1',
+        'gray-orange': '#C2A990',
+        'light-gray': '#E5E5E5',
       },
       fontFamily: {
-        highlight: ['Berkshire Swash', 'var(--font-sans)'],
+        highlight: ['Dream Avenue', 'var(--font-sans)'],
         sans: ["var(--font-sans)"],
         mono: ["var(--font-mono)"],
       },

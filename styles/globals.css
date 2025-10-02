@@ -1,17 +1,26 @@
 @import "tailwindcss";
-
-@font-face {
-  font-family: 'Berkshire Swash';
-  src: url('/web-assets/fonts/BerkshireSwash-Regular.ttf') format('truetype');
-}
 @font-face {
     font-family: 'Sansation';
     src: url('/web-assets/fonts/Sansation-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Dream Avenue';
+  src: url('/web-assets/fonts/Dream-Avenue.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('/web-assets/fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--foreground-rgb);
-  font-family: 'Sansation', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Raleway', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @config "../tailwind.config.js"
