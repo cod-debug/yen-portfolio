@@ -28,7 +28,7 @@ export const Navbar = () => {
           <NavbarBrand as="li" className="gap-3 max-w-fit">
             <NextLink
               className="flex justify-start flex-col items-center gap-1"
-              href="/#welcome"
+              href="/#alignstudio"
             >
               <Logo />
             </NextLink>
