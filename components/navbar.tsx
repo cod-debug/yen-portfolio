@@ -8,17 +8,24 @@ import NextLink from "next/link";
 
 import { EllipsisIcon, Logo } from "@/components/icons";
 import { Button } from "@heroui/button";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import NavbarItems from "./navbar/navbar-items";
 import { useAppContext } from "@/app/context/AppContext";
+import { usePathname } from "next/navigation";
 
 export const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const { pageTitle } = useAppContext();
-
+  const pathname = usePathname();
+  
   function toggleMenu() {
     setShowMenu(!showMenu);
   }
+  
+  useEffect(() => {
+    setShowMenu(false);
+  }, [pathname]);
+
   return (
     <>
       <HeroUINavbar
