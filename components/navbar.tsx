@@ -10,9 +10,11 @@ import { EllipsisIcon, Logo } from "@/components/icons";
 import { Button } from "@heroui/button";
 import { useState } from "react";
 import NavbarItems from "./navbar/navbar-items";
+import { useAppContext } from "@/app/context/AppContext";
 
 export const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const { pageTitle } = useAppContext();
 
   function toggleMenu() {
     setShowMenu(!showMenu);
@@ -34,7 +36,11 @@ export const Navbar = () => {
             </NextLink>
           </NavbarBrand>
         </NavbarContent>
-
+        <NavbarContent>
+          <div className="font-highlight text-light-orange-2 text-lg md:text-2xl text-center w-full">
+            {pageTitle}
+          </div>
+        </NavbarContent>
         <NavbarContent className="basis-1 pl-4" justify="end">
           <Button className="bg-transparent">
             <EllipsisIcon className="size-10" onClick={toggleMenu} />

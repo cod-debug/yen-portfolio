@@ -13,6 +13,11 @@ const config = {
         primary: 'green-500',
         light: '#F3E8D1',
         'gray-orange': '#C2A990',
+        'light-orange': {
+          'default': '#E9DAC5',
+          '2': '#F6E9CE',
+          '3': '#F7E7D1'
+        },
         'light-gray': '#E5E5E5',
       },
       fontFamily: {

@@ -2,15 +2,26 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ChevronDown } from "../icons";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function NavbarItems() {
   const [open, setOpen] = useState(false);
+  const router = useRouter();
+  const pathname = usePathname();
 
+  function handleToggleInsideStudio(){
+    setOpen(!open);
+    const target_route = '/inside-studio';
+    if(pathname !== target_route){
+      router.push(target_route);
+    }
+  }
+  
   return (
-    <div className="mt-10 w-80 mx-3 border rounded p-5 border-light/50 bg-black/20 fixed top-5 right-20 z-100">
-      <ul className="nav-items text-light">
+    <div className="mt-10 w-80 mx-3 border rounded p-5 border-light/50 bg-black/70 fixed top-5 right-20 z-100 backdrop-blur-md">
+      <ul className="nav-items text-light font-highlight">
         <li className="border-b p-2 border-light">
-          <Link href="#about" className="w-full">
+          <Link href="/#about" className="w-full">
             About Me
           </Link>
         </li>
@@ -19,7 +30,7 @@ export default function NavbarItems() {
         <li className="border-b p-2 border-light relative">
           <button
             className="flex justify-between w-full items-center cursor-pointer"
-            onClick={() => setOpen(!open)}
+            onClick={handleToggleInsideStudio}
           >
             <span>Inside the Studio</span>
             <ChevronDown
@@ -36,12 +47,12 @@ export default function NavbarItems() {
             `}
           >
             <li className="py-1">
-              <Link href="#about" className="w-full">
+              <Link href="/inside-studio#control-room" className="w-full">
                 The Control Room
               </Link>
             </li>
             <li className="py-1">
-              <Link href="#about" className="w-full">
+              <Link href="#creative-corner" className="w-full">
                 The Creative Corner
               </Link>
             </li>
