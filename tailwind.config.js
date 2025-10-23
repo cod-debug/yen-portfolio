@@ -20,6 +20,10 @@ const config = {
         },
         'light-gray': '#E5E5E5',
       },
+      fontSize: {
+        h3: "20pt",
+        h4: "18pt",
+      },
       fontFamily: {
         highlight: ['Dream Avenue', 'var(--font-sans)'],
         sans: ["var(--font-sans)"],

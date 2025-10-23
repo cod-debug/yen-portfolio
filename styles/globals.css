@@ -23,4 +23,21 @@ body {
   font-family: 'Raleway', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#control-room .react-multi-carousel-track,
+#control-room .react-multi-carousel-list {
+  position: static!important;
+}
+
+#control-room .react-multiple-carousel__arrow.react-multiple-carousel__arrow--right,
+#control-room .react-multiple-carousel__arrow.react-multiple-carousel__arrow--left {
+  bottom: 20px;
+  background-color: transparent;
+  border: #C2A990 1px solid;
+}
+
+#control-room .react-multiple-carousel__arrow.react-multiple-carousel__arrow--right:before,
+#control-room .react-multiple-carousel__arrow.react-multiple-carousel__arrow--left:before {
+  color: #C2A990!important;
+}
+
 @config "../tailwind.config.js"
