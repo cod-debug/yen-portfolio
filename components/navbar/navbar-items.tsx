@@ -18,7 +18,7 @@ export default function NavbarItems() {
   }
   
   return (
-    <div className="mt-10 w-80 mx-3 border rounded p-5 border-light/50 bg-black/70 fixed top-5 right-20 z-100 backdrop-blur-md">
+    <div className="mt-10 max-w-[90%]  w-80 mx-3 border rounded p-5 border-light/50 bg-black/70 fixed top-5 right-[5%] md:right-20 z-100 backdrop-blur-md">
       <ul className="nav-items text-light font-highlight">
         <li className="border-b p-2 border-light">
           <Link href="/#about" className="w-full">
